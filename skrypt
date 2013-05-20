@@ -1,0 +1,3 @@
+solve;
+
+display zysk, wyprodukowana_ilosc, ilosc_na_sprzedaz, magazyn, d_zm ;

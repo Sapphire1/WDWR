@@ -1,0 +1,64 @@
+########
+# DATA #
+########
+
+param EPSILON := 0.02;
+# jakaś mała wartość
+
+param ILOSC_ZMIAN:= 144;
+# 2(zmiany w ciągu doby) * 24(tyle dni pracujemy w miesiącu) * 3(tyle miesięcy działamy)
+
+param PRODUKT := 4;
+param MASZYNA := 5;
+param NR_MASZYNY :=
+1 4
+2 2
+3 3
+4 2
+5 2;
+
+param LIMIT_PROD : 
+	1		2		3		4:=
+1	400		0		200		300
+2	700		400		500		0
+3	0		800		600		400;
+
+param LAMBDA := 0.0002;
+param DZIEN := 24; 
+
+param ZMIANA := 2;
+
+param MIESIAC := 3;
+
+param DLUGOSC_ZMIANY := 8;
+# 8 godziny działamy
+
+param CZAS_PRODUKCJI :
+	1		2		3		4		5:=
+1	0.4		0.2		0.1		0.06		0
+2	0.6		0.1		0		0.04		0
+3	0		0		0.7		0		0.02
+4 	0		0.6		0		0.05		0;
+
+param CZY_PRODUKUJEMY :
+	1		2		3		4		5:=
+1	1		1		1		1		0
+2	1		1		0		1		0
+3	0		0		1		0		1
+4 	0		1		0		1		0;
+
+param KOSZT_MAGAZYNOWANIA := 1;
+param OKRES := 4;
+param MIN_MAGAZYN := 20;
+param MAX_MAGAZYN := 200;
+param STAN_MAGAZYNU_KONIEC := 50;
+
+param R :
+	1		2		3		4:=
+1	9		7		6		5
+2	8		5		10		9
+3	10		9		7		8;
+
+param WAR_OCZEKIWANA :
+	1		2		3		4:=
+1	0.91		0.72		0.71		0.67;
